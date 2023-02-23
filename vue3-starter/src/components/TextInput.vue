@@ -19,6 +19,11 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  readonly: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
 });
 
 const name = toRef(props, "name");
@@ -32,14 +37,24 @@ const { value: inputValue, errorMessage } = useField(name, undefined, {
   <v-text-field
     :name="name"
     v-model="inputValue"
-    clearable
     hide-details="auto"
     :label="label"
     :placeholder="placeholder"
     :error="errorMessage == ''"
     :error-messages="errorMessage"
+    :readonly="readonly"
+    variant="outlined"
+    :class="{ readonly: readonly }"
+    density="compact"
   ></v-text-field>
 </template>
 
-<style scoped>
+<style >
+
+.readonly{
+    background: #e9f3f7 none !important;
+    
+}
+
+
 </style>
