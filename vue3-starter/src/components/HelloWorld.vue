@@ -1,12 +1,32 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
+import { Form } from "vee-validate";
+import * as Yup from "yup";
+import TextInput from "./TextInput.vue";
 
-defineProps<{ msg: string }>()
+defineProps<{ msg: string }>();
 
-const count = ref(0)
+const count = ref(0);
+
+function onSubmit(values) {
+  alert(JSON.stringify(values, null, 2));
+}
+
+const schema = Yup.object().shape({
+  name: Yup.string().required(),
+});
 </script>
 
 <template>
+  <Form @submit="onSubmit" :validation-schema="schema">
+    <TextInput
+      name="name"
+      label="Full Name"
+      placeholder="Your Name"
+      v-model="count"
+    />
+  </Form>
+
   <h1>{{ msg }}</h1>
 
   <div class="card">
