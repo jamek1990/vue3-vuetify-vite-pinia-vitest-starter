@@ -4,6 +4,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
+      <v-alert
+    type="success"
+    title="Alert title"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem!"
+  ></v-alert>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
