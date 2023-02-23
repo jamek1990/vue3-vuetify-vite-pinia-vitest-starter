@@ -36,7 +36,7 @@ const { value: inputValue, errorMessage } = useField(name, undefined, {
     hide-details="auto"
     :label="label"
     :placeholder="placeholder"
-    :error="errorMessage != ''"
+    :error="errorMessage == ''"
     :error-messages="errorMessage"
   ></v-text-field>
 </template>
