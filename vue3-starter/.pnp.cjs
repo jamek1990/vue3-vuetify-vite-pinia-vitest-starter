@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:1.3.4"],\
             ["pinia", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:2.0.32"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["vee-validate", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:4.7.4"],\
             ["vite", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:4.1.4"],\
             ["vitest", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:0.28.5"],\
             ["vue", "npm:3.2.47"],\
@@ -2334,6 +2335,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["vee-validate", [\
+        ["npm:4.7.4", {\
+          "packageLocation": "./.yarn/cache/vee-validate-npm-4.7.4-1d00afa97a-f2890602bf.zip/node_modules/vee-validate/",\
+          "packageDependencies": [\
+            ["vee-validate", "npm:4.7.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:4.7.4", {\
+          "packageLocation": "./.yarn/__virtual__/vee-validate-virtual-f39b167019/0/cache/vee-validate-npm-4.7.4-1d00afa97a-f2890602bf.zip/node_modules/vee-validate/",\
+          "packageDependencies": [\
+            ["vee-validate", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:4.7.4"],\
+            ["@types/vue", null],\
+            ["@vue/devtools-api", "npm:6.5.0"],\
+            ["vue", "npm:3.2.47"]\
+          ],\
+          "packagePeers": [\
+            "@types/vue",\
+            "vue"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["vite", [\
         ["npm:4.1.4", {\
           "packageLocation": "./.yarn/cache/vite-npm-4.1.4-224b9db54d-50a9a1f2e2.zip/node_modules/vite/",\
@@ -2602,6 +2626,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:1.3.4"],\
             ["pinia", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:2.0.32"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["vee-validate", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:4.7.4"],\
             ["vite", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:4.1.4"],\
             ["vitest", "virtual:3b5d357e3fdb2ae735eb8bc02e774f6f365c571be3384a5738e9f2d9819e3e94fe334bb49180e9080b1824903fdc3945a46c40581a31575c6008b2faa5d71ef9#npm:0.28.5"],\
             ["vue", "npm:3.2.47"],\
